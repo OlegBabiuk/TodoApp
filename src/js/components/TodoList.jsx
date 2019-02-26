@@ -14,6 +14,7 @@ function TodoList(props) {
           <li key={item.id}>
             <label>
               <input
+                disabled={item.disabled}
                 type="checkbox"
                 checked={item.checked}
                 onChange={() => onChange(item)}
